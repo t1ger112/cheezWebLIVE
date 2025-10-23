@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" version="1.1.23 INDEX comments"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="CHEEZ, cheez, foxhole, FOXHOLE, cheezboard, cheeseboard, thecheezboard, the cheezboard, regiment, cheese, regi"/>
+    <meta name="description" content="Help yourself to the official CHEEZ regiment propaganda and noticeboard platter!"/>
+    <meta name="author" content="t1ger112"/>
+    <link rel="stylesheet" href="/css/stylesheet.css?v=1721a21e3c240d1c82023c"/>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css">
+    <link rel="icon" href="/images/favicon.png"/>
+    <title>The Cheezboard</title>
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
+    <script src="/js/scripts.js" defer></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</style>
+    <script> const lenis = new Lenis({ autoRaf: true, duration: 0.95, lerp: 0.2,}); </script>
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <div class="topbar-container">                                        
+                <div class="desktop-width-container">
+                    <div class="topbar-logo-btn">
+                        <a class="logo" href="#the_cheezboard">
+                            <img class="logoIMG" src="/images/cheezLogo.png" alt="CHEEZ"/>
+                        </a>
+                    </div>
+                    <div class="topbar-menu-btn">
+                        <button class="menu" onclick="openTopMenu()">MENU</button>
+                    </div>
+                    <div class="topbar-search-cont">
+                        <div class="topbar-search-btn">
+                            <a class="search" onclick="openSearchMenuTop()" href="#search-ops"><svg id="search-svg-scalar" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 22" fill="none" stroke="#ffffff" stroke-width="3.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg></a>
+                        </div>       
+                    </div>
+                    <div class="topbar-disc-items-desktop">
+                        <a class="disc-icon" target="_blank" onclick="dis1()"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 -10 127.14 86.36">
+                                <path id="demo" fill="#fff"
+                                    d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+                            </svg></a>
+                        <a class="login" target="_blank" onclick="dis1()">JOIN OUR DISCORD</a>
+                    </div>
+                    <div class="topbar-disc-items-mobile">
+                        <a class="disc-icon" target="_blank" onclick="dis1()"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 -10 127.14 86.36">
+                                <path id="demo" fill="#fff"
+                                    d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+                            </svg></a>
+                        <a class="login" target="_blank" onclick="dis1()">JOIN</a>
+                    </div>      
+                </div>
+                <input id="hide-search-bar-tbx" type="checkbox">
+                <input id="hide-top-menu-tbx" type="checkbox">
+            </div>
+            <div class="top-menu-width-container">
+                <div id="hidden-top-menu-banner">
+                    <span class="top-menu-container">
+                        <a class="top-menu-items-link" href="#recent_notices" style="margin-top: 1.25rem;">Matured Notices</a>
+                        <a class="top-menu-items-link" href="#matured_ops">Recent Posts</a>
+                        <a class="top-menu-items-link" href="https://eatcheez.com/officers">Our Officer Team</a>
+                        <a class="top-menu-items-link" href="https://eatcheez.com/news">Shard News Page</a>
+                        <a class="top-menu-items-link" target="_blank" onclick="dis1()">Join Our Discord</a>
+                        <a class="top-menu-items-link" href="#contact_us">How to Contact Us</a>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="main-container">
+            <div id="the_cheezboard" class="content-container">
+
+                <div class="top-message-container top-message-collie">
+                    <a class="temp-top-message-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="50 -10 460 460" fill="#FFFFFF">
+                            <path d="M256 56C145.72 56 56 145.72 56 256s89.72 200 200 200 200-89.72 200-200S366.28 56 256 56zm0 82a26 26 0 11-26 26 26 26 0 0126-26zm48 226h-88a16 16 0 010-32h28v-88h-16a16 16 0 010-32h32a16 16 0 0116 16v104h28a16 16 0 010 32z" />
+                        </svg>
+                    </a>
+                    <a class="temp-top-message-text">CURRENTLY COLONIAL</a>
+                </div>
+                <div class="top-message-container top-message-warden">
+                    <a class="temp-top-message-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="50 -10 460 460" fill="#FFFFFF">
+                            <path d="M256 56C145.72 56 56 145.72 56 256s89.72 200 200 200 200-89.72 200-200S366.28 56 256 56zm0 82a26 26 0 11-26 26 26 26 0 0126-26zm48 226h-88a16 16 0 010-32h28v-88h-16a16 16 0 010-32h32a16 16 0 0116 16v104h28a16 16 0 010 32z" />
+                        </svg>
+                    </a>
+                    <a class="temp-top-message-text">CURRENTLY WARDEN</a>
+                </div>
+
+
+                <div class="big-title-container">
+                    <div>
+                        <h1 class="big-main-title">THE CHEEZBOARD</h1>  <!-- <a class="big-beta-tag">BriETA</a> -->
+                    </div>
+                    <h2 class="main-welcome-message-title">Help yourself to the official CHEEZ regiment propagouda and noticeboard platter:</h2>
+                </div>
+
+
+                <div id="01" class="board-container">
+                    <div class="cheezboard-background">
+                        <div class="cheezboard-handle"></div>
+
+                        <div class="ops-recent-container">
+                            <div class="ops-navbar-label-container">
+                                <a id= "recent_notices" class="ops-text">Matured Notices:</a>
+                            </div>
+                        </div>
+
+                        <div class="recent-background-container">
+                            <div class="recent-board-container">
+                                <div class="boardvid-video-cont-1">
+                                    <a href="https://eatcheez.com/news">
+                                        <image class="video-player recent-vid-1" src="/images/minprop/shardnewsAllEpisodesThumb.png"></image>
+                                    </a>
+                                </div>    
+                                <div class="boardvid-video-cont-2">
+                                    <a href="https://eatcheez.com/officers">
+                                        <image id="RCNT2ID-e23c19cda02" class="video-player recent-vid-2 " src="/images/CHZ_OFFICERS.png"></image>
+                                    </a>
+                                </div>                               
+                                <div class="boardvid-video-cont-3">
+                                    <a class="recent-text-1 recent-title-1">WAR NOTICES:</a>
+                                    <a class="recent-text-1" style="top: 65px;">CHEEZ is currently playing <!-- <b style="color: rgb(0, 83, 161);">WARDENS</b>--> <b style="color: rgb(39, 128, 28);">COLONIAL</b> on <b>ABLE</b> shard for <b>WAR #127</b>!</a>
+                                    <iframe class="message-player recent-vid-3"></iframe>
+                                </div>
+                                <div class="recent-cheez-graphic-1">
+                                    <img class="cheez-graphic-1" src="/images/cheese-graphic-1.png" alt="cheese"/>
+                                </div>
+                                <div class="recent-cheez-graphic-2"> 
+                                    <img class="cheez-graphic-2" src="/images/cheese-graphic-2.png" alt="cheese"/>
+                                </div>
+                                <div class="recent-cheez-graphic-4"> 
+                                    <img class="cheez-graphic-4" src="/images/cheese-graphic-1.png" alt="cheese"/>
+                                </div>
+                                <div class="recent-cheez-graphic-3">
+                                    <img class="cheez-graphic-2" src="/images/cheese-graphic-3.png" alt="cheese"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div id="ops-searchbar-cont" class="ops-searchbar-container ops-searchbar-visible">
+                            <div class="ops-searchbar-background">
+                                <input id="ops-searchbar-id" onkeyup="searchSelection()" placeholder="Search Slices..." type="text" class="ops-searchbar">
+                                <button id="ops-search-icon-id" class="ops-search-icon" onclick="clearSearchBar()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 22" fill="none" stroke="#ffffff" stroke-width="3.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg></button>
+                                <button id="ops-search-clear-icon-id" class="ops-search-clear-icon" onclick="clearSearchBar()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
+                                    <path d="M251.33-178 178-251.33 406.67-480 178-708.67 251.33-782 480-553.33 708.67-782 782-708.67 553.33-480 782-251.33 708.67-178 480-406.67 251.33-178Z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ops-big-container" id="ops-big-container-id">
+                            <div class="ops-navbar-container-2">
+                                <div class="ops-navbar-label-container">
+                                    <a id= "matured_ops" class="ops-text">Recently Cured Posts:</a>
+                                </div>
+                            </div>       
+                            <div class="ops-navbar-container">
+                                <div class="ops-navbar-search-container" id="search-ops">
+                                    <a class="ops-icon" onclick="openSearchMenu()" href="#search-ops"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="20" height="16" viewBox="0 0 24 23" fill="none" stroke="#dbb286"
+                                            stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        </svg></a>
+                                    <a id="search-btn" onclick="openSearchMenu()" class="ops-text" href="#search-ops">Search</a>
+                                </div>
+                                <div class="ops-navbar-filter-container" id="filter-ops">
+                                    <a id="filter-icon-btn" class="ops-filter-icon" href="#filter-ops" onclick="openFilterMenu()"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="21" height="16" viewBox="50 -40 322 509 ">
+                                            <path
+                                                d="M35.4 87.12l168.65 196.44A16.07 16.07 0 01208 294v119.32a7.93 7.93 0 005.39 7.59l80.15 26.67A7.94 7.94 0 00304 440V294a16.07 16.07 0 014-10.44L476.6 87.12A14 14 0 00466 64H46.05A14 14 0 0035.4 87.12z"
+                                                fill="none" stroke="#dbb286" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="65" />
+                                        </svg></a>
+                                    <a id="filter-btn" class="ops-text" href="#filter-ops" onclick="openFilterMenu()">Filter</a> 
+                                    <div class="hidden-filter-menu">
+                                        <input id="hide-filter-menu-tbx-id" type="checkbox">
+                                        <div id="filter-tags-container">
+                                            <div id="filter-label-cont">
+                                                <a id="filter-tag-menu-label">Flavours:</a>
+                                                <a id="filter-tag-menu-EXIT-btn" onclick="openFilterMenu()">X</a>
+                                            </div>
+                                            <input id="TAG-infantry-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="Infantry">
+                                            <input id="TAG-rockets-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="Rockets">
+                                            <input id="TAG-artillery-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="Artillery">
+                                            <input id="TAG-vehicles-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="Vehicles">
+                                            <input id="TAG-tanks-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="Tanks">
+                                            <input id="TAG-naval-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="Naval">
+                                            <input id="TAG-qrf-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="QRF">
+                                            <input id="TAG-parmesan-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="Parmesan">
+                                            <input id="TAG-memerey-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="Memerey">
+                                            <input id="TAG-highlight-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="Highlights">
+                                            <input id="TAG-cheez-tbx" class="hidden-filter-tbx" onclick="filterSelection('filter')"  type="checkbox" alt="CHEEZ Op">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="post-list-container">
+
+                            <!------------------  POST CONT CLASS ITEMS:  ----------------------   [CLASS]
+                    
+                            TAG-infantry    TAG-rockets     TAG-artillery   TAG-vehicles    
+                            TAG-tanks       TAG-naval       TAG-qrf         TAG-parmesan
+                            TAG-memerey     TAG-highlight   TAG-cheez 
+                    
+
+                            -------------------  DIV POST TAGS CONT ITEMS:  --------------------    [JS]
+
+                            <a class="ops-post-tag post-TAG-memerey" onclick="updateTagTickbox('post-TAG-memerey', 'TAG-memerey-tbx')">#MEMEREY</a>
+                            <a class="ops-post-tag post-TAG-highlight" onclick="updateTagTickbox('post-TAG-highlight', 'TAG-highlight-tbx')">#HIGHLIGHT</a>
+                            <a class="ops-post-tag post-TAG-cheez" onclick="updateTagTickbox('post-TAG-cheez', 'TAG-cheez-tbx')">#CHEEZ</a>
+                            <a class="ops-post-tag post-TAG-tanks" onclick="updateTagTickbox('post-TAG-tanks', 'TAG-tanks-tbx')">#TANKS</a>
+                            <a class="ops-post-tag post-TAG-naval" onclick="updateTagTickbox('post-TAG-naval', 'TAG-naval-tbx')">#NAVAL</a>
+                            <a class="ops-post-tag post-TAG-qrf" onclick="updateTagTickbox('post-TAG-qrf', 'TAG-qrf-tbx')">#QRF</a>
+                            <a class="ops-post-tag post-TAG-parmesan" onclick="updateTagTickbox('post-TAG-parmesan', 'TAG-parmesan-tbx')">#PARMESAN</a>
+                            <a class="ops-post-tag post-TAG-infantry" onclick="updateTagTickbox('post-TAG-infantry', 'TAG-infantry-tbx')">#INFANTRY</a>
+                            <a class="ops-post-tag post-TAG-rockets" onclick="updateTagTickbox('post-TAG-rockets', 'TAG-rockets-tbx')">#ROCKETS</a>
+                            <a class="ops-post-tag post-TAG-artillery" onclick="updateTagTickbox('post-TAG-artillery', 'TAG-artillery-tbx')">#ARTILLERY</a>
+                            <a class="ops-post-tag post-TAG-vehicles" onclick="updateTagTickbox('post-TAG-vehicles', 'TAG-vehicles-tbx')">#VEHICLES</a>
+
+                            TEMP EMBED: https://www.youtube-nocookie.com/embed/-FhOuRJZsPk?si=5DdSvR2S5n6e6EMS
+                            -->
+
+                            <!--   POST ARCHIVE START, NEW POSTS ON LINE BELOW + UP METADATA   -->
+
+
+                            <div id="SL0215a5c" class="ops-post-container TAG-highlight TAG-cheez">
+                                <div class="post-label-container">
+                                    <div class="post-status-container">
+                                        <div class="tooltip">
+                                            <button class="ops-post-status-text-blue" onclick="copyPostLinkID('SL0787c8a2')">SHARE</button>
+                                            <span class="tooltiptext">Post Copied!</span>
+                                        </div>
+                                        <a class="ops-post-status-text-war">WAR#128</a> 
+                                    </div>                 
+                                    <div class="post-title-container">
+                                        <a class="ops-post-title-text">FRESH GREEN CHEEZ</a> 
+                                    </div>
+                                    <div class="post-details-container">
+                                        <div class="post-details-time-container">
+                                            <a class="ops-post-details-text">09/10/25</a>
+                                        </div>
+                                        <a class="ops-post-details-text" style="padding-top: 5px;">-</a>
+                                        <div class="post-details-user-container user-t1ger">
+                                            <a class="ops-post-details-text" href="https://eatcheez.com/officers#t1ger">[CHEEZ] t1ger</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-contents-container">
+                                        <a class="ops-post-content-text">CHEEZ always joins the losing side! As a result, </a>
+                                        <a class="ops-post-content-text">we are moving over to the <!--<b style="color: rgb(0, 83, 161);">WARDENS</b>--> <b style="color: rgb(39, 128, 28);">COLLIES</b> on <b>ABLE</b> shard for <b>WAR #128</b>!</a>
+                                        <a class="ops-post-content-text">WAR#127 highlights up on Shard News soon!</a>
+                                        <br><br>
+                                    </div>
+                                    <div class="post-tags-container">
+                                        <a class="ops-post-tag post-TAG-highlight" onclick="updateTagTickbox('post-TAG-highlight', 'TAG-highlight-tbx')">#HIGHLIGHT</a>
+                                        <a class="ops-post-tag post-TAG-cheez" onclick="updateTagTickbox('post-TAG-cheez', 'TAG-cheez-tbx')">#CHEEZ</a>
+                                    </div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-1" style="bottom: -48px"></div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-2" style="bottom: -2px"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-3"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-4"></div>  
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-5"></div> 
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-6" style="bottom: -52px"></div> 
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-7"></div> 
+                                </div>
+                                <div class="post-video-container">
+                                    <a href="https://eatcheez.com/news/collie">
+                                        <div class="img-cont-poster">
+                                            <image class="post-video-player post-img-hoverable" src="/images/CHZ_COLLIE.png"></image>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div id="SL0787c8a2" class="ops-post-container TAG-highlight TAG-cheez">
+                                <div class="post-label-container">
+                                    <div class="post-status-container">
+                                        <div class="tooltip">
+                                            <button class="ops-post-status-text-blue" onclick="copyPostLinkID('SL0787c8a2')">SHARE</button>
+                                            <span class="tooltiptext">Post Copied!</span>
+                                        </div>
+                                        <a class="ops-post-status-text-war">WAR#127</a>
+                                    </div>                 
+                                    <div class="post-title-container">
+                                        <a class="ops-post-title-text">FRESH BLUE CHEEZ</a> 
+                                    </div>
+                                    <div class="post-details-container">
+                                        <div class="post-details-time-container">
+                                            <a class="ops-post-details-text">28/08/25</a>
+                                        </div>
+                                        <a class="ops-post-details-text" style="padding-top: 5px;">-</a>
+                                        <div class="post-details-user-container user-t1ger">
+                                            <a class="ops-post-details-text" href="https://eatcheez.com/officers#t1ger">[CHEEZ] t1ger</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-contents-container">
+                                        <a class="ops-post-content-text">CHEEZ always joins the losing side! As a result, </a>
+                                        <a class="ops-post-content-text">we will continue to play <b style="color: rgb(0, 83, 161);">WARDENS</b> on <b>ABLE</b> shard for <b>WAR #127</b>!</a>
+                                        <a class="ops-post-content-text">Previous war highlights now up on Shard News!</a>
+                                        <br><br>
+                                    </div>
+                                    <div class="post-tags-container">
+                                        <a class="ops-post-tag post-TAG-highlight" onclick="updateTagTickbox('post-TAG-highlight', 'TAG-highlight-tbx')">#HIGHLIGHT</a>
+                                        <a class="ops-post-tag post-TAG-cheez" onclick="updateTagTickbox('post-TAG-cheez', 'TAG-cheez-tbx')">#CHEEZ</a>
+                                    </div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-1" style="bottom: -48px"></div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-2" style="bottom: -2px"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-3"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-4"></div>  
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-5"></div> 
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-6" style="bottom: -52px"></div> 
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-7"></div> 
+                                </div>
+                                <div class="post-video-container">
+                                    <a href="https://eatcheez.com/news/warden">
+                                        <div class="img-cont-poster">
+                                            <image class="post-video-player post-img-hoverable" src="/images/CHZ_WARDEN.png"></image>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div id="SL075c8e4123" class="ops-post-container TAG-highlight TAG-cheez TAG-memerey">
+                                <div class="post-label-container">
+                                    <div class="post-status-container">
+                                        <div class="tooltip">
+                                            <button class="ops-post-status-text-blue" onclick="copyPostLinkID('SL075c8e4123')">SHARE</button>
+                                            <span class="tooltiptext">Post Copied!</span>
+                                        </div>
+                                        <a class="ops-post-status-text-war">MULTI WAR</a>
+                                    </div>                 
+                                    <div class="post-title-container">
+                                        <a class="ops-post-title-text">CHEEZ SHARD NEWS</a> 
+                                    </div>
+                                    <div class="post-details-container">
+                                        <div class="post-details-time-container">
+                                            <a class="ops-post-details-text">12/07/25</a>
+                                        </div>
+                                        <a class="ops-post-details-text" style="padding-top: 5px;">-</a>
+                                        <div class="post-details-user-container user-t1ger">
+                                            <a class="ops-post-details-text" href="https://eatcheez.com/officers#t1ger">[CHEEZ] t1ger</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-contents-container">
+                                        <a class="ops-post-content-text">Our brand new Ministry of Propagouda page is up and running! Now home to SHARD NEWS, newspapers and all our videos, click to watch our pilot episode!</a>
+                                        <br><br>
+                                    </div>
+                                    <div class="post-tags-container">
+                                        <a class="ops-post-tag post-TAG-highlight" onclick="updateTagTickbox('post-TAG-highlight', 'TAG-highlight-tbx')">#HIGHLIGHT</a>
+                                        <a class="ops-post-tag post-TAG-cheez" onclick="updateTagTickbox('post-TAG-cheez', 'TAG-cheez-tbx')">#CHEEZ</a>
+                                        <a class="ops-post-tag post-TAG-memerey" onclick="updateTagTickbox('post-TAG-memerey', 'TAG-memerey-tbx')">#MEMEREY</a>
+                                    </div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-1" style="bottom: -48px"></div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-2" style="bottom: -2px"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-3"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-4"></div>  
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-5"></div> 
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-6" style="bottom: -52px"></div> 
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-7"></div> 
+                                </div>
+                                <div class="post-video-container">
+                                    <a href="https://eatcheez.com/news">
+                                        <div class="img-cont-poster">
+                                            <image class="post-video-player post-img-hoverable" src="/images/minprop/shardnewsAllEpisodesThumb.png"></image>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div id="SL0718f6e7c" class="ops-post-container TAG-highlight TAG-cheez TAG-tanks TAG-vehicles TAG-qrf TAG-infantry">
+                                <div class="post-label-container">
+                                    <div class="post-status-container">
+                                        <div class="tooltip">
+                                            <button class="ops-post-status-text-blue" onclick="copyPostLinkID('SL0718f6e7c')">SHARE</button>
+                                            <span class="tooltiptext">Post Copied!</span>
+                                        </div>
+                                        <a class="ops-post-status-text-war">WAR #125</a>
+                                    </div>                 
+                                    <div class="post-title-container">
+                                        <a class="ops-post-title-text">CHEEZ BTD 20 KILLS</a> 
+                                    </div>
+                                    <div class="post-details-container">
+                                        <div class="post-details-time-container">
+                                            <a class="ops-post-details-text">17/06/25</a>
+                                        </div>
+                                        <a class="ops-post-details-text" style="padding-top: 5px;">-</a>
+                                        <div class="post-details-user-container user-zed">
+                                            <a class="ops-post-details-text" href="https://eatcheez.com/officers#officers">[CHEEZ] ZeddyZedZedZed</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-contents-container">
+                                        <a class="ops-post-content-text">A CHEEZ BTD racked up 20 vehicle kills on the frontline (a new cheez record!), including an enemy Super-Heavy-Tank!</a>
+                                        <br><br>
+                                    </div>
+                                    <div class="post-tags-container">
+                                        <a class="ops-post-tag post-TAG-highlight" onclick="updateTagTickbox('post-TAG-highlight', 'TAG-highlight-tbx')">#HIGHLIGHT</a>
+                                        <a class="ops-post-tag post-TAG-cheez" onclick="updateTagTickbox('post-TAG-cheez', 'TAG-cheez-tbx')">#CHEEZ</a>
+                                        <a class="ops-post-tag post-TAG-tanks" onclick="updateTagTickbox('post-TAG-tanks', 'TAG-tanks-tbx')">#TANKS</a>
+                                        <a class="ops-post-tag post-TAG-vehicles" onclick="updateTagTickbox('post-TAG-vehicles', 'TAG-vehicles-tbx')">#VEHICLES</a>
+                                        <a class="ops-post-tag post-TAG-qrf" onclick="updateTagTickbox('post-TAG-qrf', 'TAG-qrf-tbx')">#QRF</a>
+                                        <a class="ops-post-tag post-TAG-infantry" onclick="updateTagTickbox('post-TAG-infantry', 'TAG-infantry-tbx')">#INFANTRY</a>
+                                    </div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-1" style="bottom: -60px"></div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-2" style="bottom: -2px"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-3"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-4"></div>  
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-5"></div> 
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-6" style="bottom: -62px"></div> 
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-7"></div> 
+                                </div>
+                                <div class="post-video-container">
+                                     <a href="https://www.youtube.com/watch?v=-FhOuRJZsPk" target="_blank">
+                                        <div class="img-cont-poster">
+                                            <image class="post-video-player post-img-hoverable" src="/images/minprop/vidThumb_034c10de.png"></image>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div id="SL02a5c3f6b0" class="ops-post-container TAG-highlight TAG-cheez TAG-tanks TAG-naval TAG-qrf TAG-infantry TAG-artillery TAG-vehicles">
+                                <div class="post-label-container">
+                                    <div class="post-status-container">
+                                        <div class="tooltip">
+                                            <button class="ops-post-status-text-blue" onclick="copyPostLinkID('SL02a5c3f6b0')">SHARE</button>
+                                            <span class="tooltiptext">Post Copied!</span>
+                                        </div>
+                                        <a class="ops-post-status-text-war">WAR #124</a>
+                                    </div>                 
+                                    <div class="post-title-container">
+                                        <a class="ops-post-title-text">RECIPE GUIDE FOR NUKE DEFENCE... </a>
+                                    </div>
+                                    <div class="post-details-container">
+                                        <div class="post-details-time-container">
+                                            <a class="ops-post-details-text">27/05/25</a>
+                                        </div>
+                                        <a class="ops-post-details-text" style="padding-top: 5px;">-</a>
+                                        <div class="post-details-user-container user-t1ger">
+                                            <a class="ops-post-details-text" href="https://eatcheez.com/officers#t1ger">[CHEEZ] t1ger</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-contents-container">
+                                        <a class="ops-post-content-text">HAPPY 1-YEAR OF CHEEZ! Lets celebrate with a montage of the Bonehaft NUKE! </a>
+                                        <br><br>
+                                    </div>
+                                    <div class="post-tags-container">
+                                        <a class="ops-post-tag post-TAG-highlight" onclick="updateTagTickbox('post-TAG-highlight', 'TAG-highlight-tbx')">#HIGHLIGHT</a>
+                                        <a class="ops-post-tag post-TAG-cheez" onclick="updateTagTickbox('post-TAG-cheez', 'TAG-cheez-tbx')">#CHEEZ</a>
+                                        <a class="ops-post-tag post-TAG-tanks" onclick="updateTagTickbox('post-TAG-tanks', 'TAG-tanks-tbx')">#TANKS</a>
+                                        <a class="ops-post-tag post-TAG-naval" onclick="updateTagTickbox('post-TAG-naval', 'TAG-naval-tbx')">#NAVAL</a>
+                                        <a class="ops-post-tag post-TAG-qrf" onclick="updateTagTickbox('post-TAG-qrf', 'TAG-qrf-tbx')">#QRF</a>
+                                        <a class="ops-post-tag post-TAG-infantry" onclick="updateTagTickbox('post-TAG-infantry', 'TAG-infantry-tbx')">#INFANTRY</a>
+                                        <a class="ops-post-tag post-TAG-artillery" onclick="updateTagTickbox('post-TAG-artillery', 'TAG-artillery-tbx')">#ARTILLERY</a>
+                                        <a class="ops-post-tag post-TAG-vehicles" onclick="updateTagTickbox('post-TAG-vehicles', 'TAG-vehicles-tbx')">#VEHICLES</a>
+                                    </div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-1" style="bottom: -58px"></div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-2" style="bottom: -2px"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-3"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-4"></div>  
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-5"></div> 
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-6" style="bottom: -56px"></div> 
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-7"></div> 
+                                </div>
+                               <div class="post-video-container">
+                                     <a href="https://www.youtube.com/watch?v=xThIZdFXL3U" target="_blank">
+                                        <div class="img-cont-poster">
+                                            <image class="post-video-player post-img-hoverable" src="/images/minprop/vidThumb_01abc56.png"></image>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div id="SL0ad4f89e7" class="ops-post-container TAG-highlight TAG-cheez TAG-tanks TAG-vehicles">
+                                <div class="post-label-container">
+                                    <div class="post-status-container">
+                                        <div class="tooltip">
+                                            <button class="ops-post-status-text-blue" onclick="copyPostLinkID('SL0ad4f89e7')">SHARE</button>
+                                            <span class="tooltiptext">Post Copied!</span>
+                                        </div>
+                                        <a class="ops-post-status-text-war">WAR #120</a>
+                                    </div>             
+                                    <div class="post-title-container">
+                                        <a class="ops-post-title-text">CHEEZ BONECAR OP</a>
+                                    </div>
+                                    <div class="post-details-container">
+                                        <div class="post-details-time-container">
+                                            <a class="ops-post-details-text">06/10/24</a>
+                                        </div>
+                                        <a class="ops-post-details-text" style="padding-top: 5px;">-</a>
+                                        <div class="post-details-user-container user-t1ger">
+                                            <a class="ops-post-details-text" href="https://eatcheez.com/officers#t1ger">[CHEEZ] t1ger</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-contents-container">
+                                        <a class="ops-post-content-text">CHEEZ set up and organised a multi-regiment bonecar operation, resulting in major success and a dead enemy Aeres!
+                                        <br><br> Taking a sneaky route behind the enemy tank lines, we reigned mass destruction and chaos across the enemy tank line and it's accompanying infantry.
+                                        <br><br> Having been caught off-guard, the enemy suddenly became trapped in the middle of the canyon, pincered between the friendly frontline and the cheez tanks at both ends.
+                                        <br><br> Now forcing through the rear of the tankline, the bonecar horde stumbled upon an enemy Aeres tank, quicly overwhelming and destroying it to end the charge on a high, boosting the frontline morale.
+                                        <br><br> A massive well done to all involved, thanks for joining in with the fun and helping to take down the enemy Aeres!
+                                        <br><br>
+                                        </a>
+                                    </div>
+                                    <div class="post-tags-container">
+                                        <a class="ops-post-tag post-TAG-highlight" onclick="updateTagTickbox('post-TAG-highlight', 'TAG-highlight-tbx')">#HIGHLIGHT</a>
+                                        <a class="ops-post-tag post-TAG-cheez" onclick="updateTagTickbox('post-TAG-cheez', 'TAG-cheez-tbx')">#CHEEZ</a>
+                                        <a class="ops-post-tag post-TAG-tanks" onclick="updateTagTickbox('post-TAG-tanks', 'TAG-tanks-tbx')">#TANKS</a>
+                                        <a class="ops-post-tag post-TAG-vehicles" onclick="updateTagTickbox('post-TAG-vehicles', 'TAG-vehicles-tbx')">#VEHICLES</a>
+                                    </div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-1" style="bottom: -46px"></div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-2" style="bottom: 10px"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-3"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-4"></div>  
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-5"></div> 
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-6" style="bottom: -42px"></div> 
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-7"></div> 
+                                </div>
+                                <div class="post-video-container">
+                                    <a href="https://www.youtube.com/watch?v=TCx4n7oN-EU" target="_blank">
+                                        <div class="img-cont-poster">
+                                            <image class="post-video-player post-img-hoverable" src="/images/minprop/vidThumb_38ce57f.png"></image>
+                                        </div>
+                                    </a>
+                                    <br>
+                                    <div class="post-video-container">
+                                        <a href="https://eatcheez.com/images/Chzimg_e123c6e06a560.png" target="_blank">
+                                            <div class="img-cont-poster">
+                                                <image class="post-video-player post-img-hoverable" src="/images/vault/thumbnail/Chzimg_e123c6e06a560.png"></image>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div id="TPLTa18fe34c" class="ops-post-container TAG-memerey TAG-highlight TAG-cheez TAG-tanks TAG-naval TAG-qrf TAG-parmesan TAG-infantry TAG-rockets TAG-artillery TAG-vehicles">
+                                <div class="post-label-container">
+                                    <div class="post-status-container">
+                                        <div class="tooltip">
+                                            <button class="ops-post-status-text-blue" onclick="copyPostLinkID('TPLTa18fe34c')">SHARE</button>
+                                            <span class="tooltiptext">Post Copied!</span>
+                                        </div>
+                                        <a class="ops-post-status-text-war">MULTI WAR</a>
+                                    </div>             
+                                    <div class="post-title-container">
+                                        <a class="ops-post-title-text">POST FILTERS HELP</a>
+                                    </div>
+                                    <div class="post-details-container">
+                                        <div class="post-details-time-container">
+                                            <a class="ops-post-details-text">SITE HELP</a>
+                                        </div>
+                                        <a class="ops-post-details-text" style="padding-top: 5px;">-</a>
+                                        <div class="post-details-user-container user-t1ger">
+                                            <a class="ops-post-details-text" href="https://eatcheez.com/officers#t1ger">[CHEEZ] t1ger</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-contents-container">
+                                        <a class="ops-post-content-text"> This is an example CHEEZ slice template with all operation tags enabled, click on a tag below to start filtering the various slices to suit your own personal taste...</a>
+                                        <br><br>
+                                    </div>
+                                    <div class="post-tags-container">
+                                        <a class="ops-post-tag post-TAG-memerey" onclick="updateTagTickbox('post-TAG-memerey', 'TAG-memerey-tbx')">#MEMEREY</a>
+                                        <a class="ops-post-tag post-TAG-highlight" onclick="updateTagTickbox('post-TAG-highlight', 'TAG-highlight-tbx')">#HIGHLIGHT</a>
+                                        <a class="ops-post-tag post-TAG-cheez" onclick="updateTagTickbox('post-TAG-cheez', 'TAG-cheez-tbx')">#CHEEZ</a>
+                                        <a class="ops-post-tag post-TAG-tanks" onclick="updateTagTickbox('post-TAG-tanks', 'TAG-tanks-tbx')">#TANKS</a>
+                                        <a class="ops-post-tag post-TAG-naval" onclick="updateTagTickbox('post-TAG-naval', 'TAG-naval-tbx')">#NAVAL</a>
+                                        <a class="ops-post-tag post-TAG-qrf" onclick="updateTagTickbox('post-TAG-qrf', 'TAG-qrf-tbx')">#QRF</a>
+                                        <a class="ops-post-tag post-TAG-parmesan" onclick="updateTagTickbox('post-TAG-parmesan', 'TAG-parmesan-tbx')">#PARMESAN</a>
+                                        <a class="ops-post-tag post-TAG-infantry" onclick="updateTagTickbox('post-TAG-infantry', 'TAG-infantry-tbx')">#INFANTRY</a>
+                                        <a class="ops-post-tag post-TAG-rockets" onclick="updateTagTickbox('post-TAG-rockets', 'TAG-rockets-tbx')">#ROCKETS</a>
+                                        <a class="ops-post-tag post-TAG-artillery" onclick="updateTagTickbox('post-TAG-artillery', 'TAG-artillery-tbx')">#ARTILLERY</a>
+                                        <a class="ops-post-tag post-TAG-vehicles" onclick="updateTagTickbox('post-TAG-vehicles', 'TAG-vehicles-tbx')">#VEHICLES</a>
+                                    </div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-1" style="bottom: -65px"></div>
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-2" style="bottom: -2px"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-3"></div>
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-4"></div>  
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-5"></div> 
+                                    <div class="cheese-hole-top-anchor post-hole-graphic-6" style="bottom: -56px"></div> 
+                                    <div class="cheese-hole-bottom-anchor post-hole-graphic-7"></div> 
+                                </div>
+                                <div class="post-video-container">
+                                    <a href="https://eatcheez.com/images/helpInfoDarkEq.png" target="_blank">
+                                        <image class="post-video-player post-img-hoverable" src="/images/helpInfoDarkEq.png"></image>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <!--    POST ARCHIVE END, DO NOT PASTE PAST THIS POINT!     -->
+
+                        </div>
+                        <a class="load-more-button" href="#the_cheezboard">WE'VE NO MORE CHEEZ GROMIT!!!</a>
+                        <input class="temp-url-holder" type="text" id="URLCopyVal" value="post-001">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottombar-container">
+            <div id="contact_us" class="bottom-text-container">
+                <p class="bottom-nav-bar-text">How to contact us:</p>
+                <div class="bottombar-links-container">
+                    <div class="bottombar-link-item">
+                        <a class="bottom-disc-icon" onclick="dis1()"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="25" height="22" viewBox="0 0 127.14 71.36">
+                            <path fill="#fff"
+                                d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+                        </svg></a>
+                        <a class="bottom-text" onclick="dis1()">DISCORD</a>
+                    </div>
+                       
+                    <div class="bottombar-link-item">
+                        <a class="zeddy-icon" href="https://eatcheez.com/officers"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FFFFFF" viewBox="1 1 27 24">
+                            <path fill-rule="evenodd"
+                                d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
+                                clip-rule="evenodd" />
+                        </svg></a>
+                        <a class="bottom-text" href="https://eatcheez.com/officers">OUR OFFICERS</a>
+                    </div>
+
+                    <div class="bottombar-link-item">
+                        <a class="officer-icon" href="https://eatcheez.com/officers#officers"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="39" height="33" fill="#FFFFFF"
+                            viewBox="4.7 -0.3 26 27">
+                            <path fill-rule="evenodd"
+                                d="M3.559 4.544c.355-.35.834-.544 1.33-.544H19.11c.496 0 .975.194 1.33.544.356.35.559.829.559 1.331v9.25c0 .502-.203.981-.559 1.331-.355.35-.834.544-1.33.544H15.5l-2.7 3.6a1 1 0 0 1-1.6 0L8.5 17H4.889c-.496 0-.975-.194-1.33-.544A1.868 1.868 0 0 1 3 15.125v-9.25c0-.502.203-.981.559-1.331ZM7.556 7.5a1 1 0 1 0 0 2h8a1 1 0 0 0 0-2h-8Zm0 3.5a1 1 0 1 0 0 2H12a1 1 0 1 0 0-2H7.556Z"
+                                clip-rule="evenodd" />
+                        </svg></a>
+                        <a class="bottom-text" href="https://eatcheez.com/officers#officers">[CHEEZ] ZeddyZedZedZed</a>
+                    </div>
+                </div>
+
+                <div class="bottombar-text-container">
+                    <a class="bottom-nav-bar-little-text">Webpage created by:</a>
+                    <a class="bottom-nav-bar-little-text-link" target="_self" id="t1ger112" href="https://eatcheez.com/officers#t1ger">[CHEEZ] t1ger</a>
+                    <a class="bottom-nav-bar-little-text">on behalf of CHEEZ regiment, for the purpose of informing the </a>
+                    <a class="bottom-nav-bar-little-text-link" target="_blank" href="https://www.foxholegame.com/">FOXHOLE</a>
+                    <a class="bottom-nav-bar-little-text">community of our very cheezy activities!</a>
+                    <a class="bottom-nav-bar-little-text">This site is NOT routinely monitored, and therefore any innacuracies or complaints should be reported via the above contacts to a verified CHEEZ officer.</a>
+                    <a class="bottom-nav-bar-little-text">CHEEZ aims to ensure the full security of current war intel, however should any OPSEC breaches occur on this site, please contact an officer immediately!</a>
+                    <br><br><a class="bottom-nav-bar-little-text">This site is still in a 'BriETA' version, and therefore some features may not work or function correctly, so please bear with us while we get up and running!</a>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top">
+            <a id="back-to-top-btn" href="#the_cheezboard">V</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
