@@ -463,10 +463,10 @@ i {
 
 .top-message-collie {
   animation: flashCollie 6s ease-in-out infinite;
-  display: none;
+  display: flex;
 }
 .top-message-warden {
-  display: flex;
+  display: none;
   animation: flashWarden 6s ease-in-out infinite;
 }
 
