@@ -56,9 +56,9 @@ i {
 :root{
   --topbar-textColour: #b03313;
   --topbar-textHoverColour: #772410;
-  --topbar-tempGreen: #6cc747;
+  --topbar-tempGreen: #949494;
   --topbar-tempBlue: #6598e6;
-  --topbar-tempGreenHi: #328610;
+  --topbar-tempGreenHi: #6d5757;
   --topbar-tempBlueHi: #0950bb;
 
   --bottombar-bigTextCol: #b03313;
